@@ -1,0 +1,39 @@
+.exam-results__top {
+    display: flex;
+    width: 1300px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.exam-results__title {
+    color: $main-black-color;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.exam-results__adder {
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.exam-results__adder-text {
+    color: $main-blue-color;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.exam-results__adder-sign {
+    color: $main-blue-color;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

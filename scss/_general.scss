@@ -1,0 +1,38 @@
+/* General */
+html {
+    box-sizing: border-box;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: $main-font;
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul li,
+ol li {
+    list-style-type: none;
+}
+
+
+a {
+    text-decoration: none;
+}

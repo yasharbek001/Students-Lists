@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students List</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="exam-results">
+        <div class="container">
+            <div class="exam-results__top">
+                <h1 class="exam-results__title">Exam results</h1>
+                <div class="exam-results__adder">
+                    <span class="exam-results__adder-text">Add new student</span>
+                    <span class="exam-results__adder-sign">+</span>
+                </div>
+            </div>
+            <div class="exam-results__main">
+                <div class="exam-results__filter">
+                    <h2 class="exam-results__filter-title">Filter</h2>
+                    <form class="exam-results__form">
+                        <span class="exam-results__form-text">Search</span>
+                        <input class="exam-results__form-input-width" type="text" name="username" placeholder="Name">
+                        <span class="exam-results__form-text">Mark</span>
+                        <div class="exam-results__form-inputs">
+                            <input class="exam-results__form-input from" type="text" name="mark" placeholder="From">
+                            <input class="exam-results__form-input to" type="text" name="mark" placeholder="To">
+                        </div>
+                        <div class="exam-results__select">
+                            <span class="exam-results__select-title">Sort by</span>
+                            <div class="exam-results__select-wrapper">
+                                <select class="exam-results__select-option">
+                                    <option value="sel">Name</option>
+                                    <option value="a-z">a-z</option>
+                                    <option value="z-a">z-a</option>
+                                    <option value="res">reset</option>  
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="exam-results__button">Filter</button>
+                    </form>
+                </div>
+                <div class="exam-results__list">
+                    <div class="exam-results__list-top">
+                        <h2 class="exam-results__list-title">Students list</h2>
+                        <div class="exam-results__result">
+                            <p class="exam-results__result-count">Count: 4</p>
+                            <p class="exam-results__result-mark">Average mark: 65%</p>
+                        </div>
+                    </div>
+                    <table>
+                        <thead></thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="exam-results__add">
+                <div class="exam-results__add-wrapper">
+                    <div class="exam-results__add-content">
+                        <div class="exam-results__add-top">
+                            <h2 class="exam-results__add-title">Add student </h2>
+                            <span class="exam-results__add-toClose">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M18 6.5L6 18.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 6.5L18 18.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <form class="exam-results__add-form">
+                            <span class="exam-results__add-text">Name</span>
+                            <input class="exam-results__add-input form-name" type="text" name="username" placeholder="Yasharbek">
+                            <span class="exam-results__add-text">Lastname</span>
+                            <input class="exam-results__add-input form-lastName" type="text" name="lastname" placeholder="Tuyganov">
+                            <span class="exam-results__add-text">Mark</span>
+                            <input class="exam-results__add-input form-mark" type="text" name="mark" placeholder="150">
+                            <button type="submit" class="exam-results__add-submit">Add student</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="exam-results__edit">
+                <div class="exam-results__edit-wrapper">
+                    <div class="exam-results__edit-content">
+                        <div class="exam-results__edit-top">
+                            <h2 class="exam-results__edit-title">Edit</h2>
+                            <span class="exam-results__edit-toClose">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M18 6.5L6 18.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 6.5L18 18.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <form class="exam-results__edit-form">
+                            <span class="exam-results__edit-text">Name</span>
+                            <input class="exam-results__edit-input input-name" type="text" name="username" placeholder="Yasharbek">
+                            <span class="exam-results__edit-text">Lastname</span>
+                            <input class="exam-results__edit-input input-lastName" type="text" name="lastname" placeholder="Tuyganov">
+                            <span class="exam-results__edit-text">Mark</span>
+                            <input class="exam-results__edit-input input-mark" type="text" name="mark" placeholder="150">
+                            <button type="submit" class="exam-results__edit-submit">Ok</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <template class="thTemplate">
+        <tr class="theadTr">
+            <th class="th"></th>
+            <th class="th"></th>
+            <th class="th"></th>
+            <th class="th"></th>
+            <th class="th"></th>
+            <th class="th"></th>
+            <th class="th"></th>
+        </tr>
+    </template>
+    <template class="template">
+            <tr class="tbodyTr">
+                <td class="id">100</td>
+                <td class="fullName">Nurmuhammad  Mahmudov</td>
+                <td class="markedDate">2021-12-05T00:00:00.000Z</td>
+                <td class="mark">140.5</td>
+                <td class="status" style="color: green;">Pass</td>
+                <td class="edit"><img id="100" src="img/edit.svg"></td>       
+                <td class="delete"><img src="img/trash.svg"></td>
+            </tr>
+    </template>
+
+    <script src="js/students.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
