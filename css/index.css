@@ -349,6 +349,10 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
